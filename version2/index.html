@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pritashna</title>
+<Link href="style.css" rel="stylesheet" type="text/css" /> 
+<style>
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Slice of Italy</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+
+<h1><center><p>Bring a taste of Italy to your kitchen with these fantastic gourmet Italian recipe</p></center></h1>
+<center><img src="images/slice/logo.png" alt="flagofitaly" width="806" height="504"</center>
+<center><p>A family of nearby restaurants called Slice of Italy is dedicated to providing a true Italian eating experience. We take great pride in serving wholesome, mouthwatering Italian cuisine together with a fine glass of wine in a cozy, homey atmosphere where guests are treated like family and friends.</p></center>
+
+
+<br>
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<footer>
+  <p>Author: Pritashna Kishore</p>
+  <p><a href="mailto:sliceofitaly@gmail.com">sliceofitaly@gmail.com</a></p>
+ <p>Please call us on PH:0800 142 769 to book in and reserve a table</p>
+</footer>
+</body>
+</html>
+
+
