@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pritashna</title>
+<Link href="style.css" rel="stylesheet" type="text/css" /> 
+<style>
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Slice of Italy</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+
+<h1>Menu</h1>
+<center><p>Lunch and dinner</p></center>
+<br>
+<center><p>Appetisers and Breads</p>
+<p>Garlic Bread $8.50 for two</p>
+<p>Cheesy garlic bread $9.00 for twoMarinated olives $8.00 per bowl</p>
+<p>Italian cheese platter $15.00</p>
+<p>Bruchestta classica $13.00</p>
+<p>Bruchestta gallettio $14.00</p>
+<p>Chopped italian salad $13.50</p>
+<p>Feta salad $15.00</p>
+<p>Minestrone(veggie soup) $14.50<p>
+<br>
+<center><p>Mains</p></center>
+<p>Risotoo di pollo $23.00<p>
+<p>Spaghetti alla bolognese $21.50<p>
+<p>Fettuccine con pollo $24.50<p>
+<p>Lasagna al forno $25.00<p>
+<p>Raviolo ponodoro e crema $28.00<p>
+<p>Cannelloni ricotta e spainaci $29.00<p>
+<p>Rigatoni $25.50<p>
+<p>Ratatouille $29.00<p>
+<p>Gnocchi della casa $26.50<p>
+ <img class="mySlides" src="images/menu/bruschetta.jpg" alt="bruschetta" style="width:806"height="504">
+ <img class="mySlides" src="images/menu/macncheese.jpg" alt="macncheese" style="width:806"height="504">
+ <img class="mySlides" src="images/menu/rat.jpg" alt="rattauollie" style="width:806"height="504">
+<br>
+<center><p>Cocktails</p></center>
+<p>Dry marini $18.50</p> 
+<p>Sweet martini $18.50</p>
+<p>Negroni $21.50</p>
+<p>Magarita $19.00</p>
+<p>Italian sprite $19.00</p>
+<p>Garibaldi cocktail $18.50</p>
+<p>Expresso martini $18.50</p>
+<br>
+<img src="images/menu/negroni.jfif" alt="negroni" width="350" height="350">
+<img src="images/menu/magarita.jpg" alt="magarita" width="350" height="350">
+<img src="images/menu/dry martini.jfif" alt="drymartini" width="350" height="350">
+<img src="images/menu/garibaldi.jfif" alt="garbaldi" width="350" height="350">
+<center><p>Mocktails</p></center>
+<p>Virgin sangria $14.00</p>
+<p>Sprite mimosa $13.50</p>
+<p>Strawberry basil spirits $14.00</p>
+<p>Virgin martini $13.50</p>
+</footer> 
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<footer>
+  <p>Author: Pritashna Kishore</p>
+  <p><a href="mailto:sliceofitaly@gmail.com">sliceofitaly@gmail.com</a></p>
+</footer>
+</body>
+</html>
+
+

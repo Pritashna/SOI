@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pritashna</title>
+<Link href="style.css" rel="stylesheet" type="text/css" /> 
+<style>
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Slice of Italy</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+
+<center><h1>About us</h1>
+<p>Opening hours
+<br>
+Monday to Friday:10am to 9pm
+<br>
+Saturday and Sunday:11am to 9pm</p>
+<p> Who are we?</p>
+<p>We are a traditional italian resturant and our main goal is to help you satisfy your Italian cravings with our authentic Italian recipes</p>
+<p>Where are we located?</p>
+<p>We are located in Auckland CBD by the viaduct aswell as Mission Bay and Parnell</p></center> 
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<footer>
+  <center><p>Author: Pritashna Kishore</p>
+  <p><a href="mailto:sliceofitaly@gmail.com">sliceofitaly@gmail.com</a></p></center>
+</footer>
+</body>
+</html>
+
+

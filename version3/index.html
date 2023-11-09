@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pritashna</title>
+<Link href="style.css" rel="stylesheet" type="text/css" /> 
+<style>
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Slice of Italy</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+
+<h1><center><p>Bring a taste of Italy to your kitchen with these fantastic gourmet Italian recipe</p></center></h1>
+<center><img src="images/slice/logo.png" alt="flagofitaly" width="806" height="504"</center>
+<center><p>A family of nearby restaurants called Slice of Italy is dedicated to providing a true Italian eating experience. We take great pride in serving wholesome, mouthwatering Italian cuisine together with a fine glass of wine in a cozy, homey atmosphere where guests are treated like family and friends.</p></center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RQlp-p_Qcsw?si=sL1HDY3K2LtfFQZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center><p>Forever pasta! This would likely be the one food that we could consume endlessly. There, we are aware that we are not alone. This is where you go if you want the best spaghetti in Auckland, without a doubt. Every day, Slice of Italy produces their own fresh pasta, and it is exquisite. High bar stools inside allow you to sip noir from a vineyard while people-watching the crowds of people outside. The ideal balance, since elegant tables further inside will soon be filled with platters of homemade pasta. Yes, you're watching the skilled chefs make fresh pasta by rolling, flattening, and cooking it in front of you. You won't regret it if you serve it with your preferred sauce along with some bruschetta to start. </p></center>
+
+<br>
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<footer>
+  <p>Author: Pritashna Kishore</p>
+  <p><a href="mailto:sliceofitaly@gmail.com">sliceofitaly@gmail.com</a></p>
+ <p>Please call us on PH:0800 142 769 to book in and reserve a table</p>
+</footer>
+</body>
+</html>
+
+
